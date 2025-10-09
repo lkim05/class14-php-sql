@@ -1,0 +1,244 @@
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples.                                        */
+/*                                                                             */
+/* Do not copy this code into your project submission and then change it.      */
+/*                                                                             */
+/* Write your own code from scratch. Use this example as a REFERENCE only.     */
+/*                                                                             */
+/* You may not copy this code, change a few names/variables, and then claim it */
+/* as your own. It does not matter if you can explain what every line does.    */
+/*                                                                             */
+/* Examples are provided to help you learn. Copying the example and then       */
+/* changing it a bit, does not help you learn the learning objectives of this  */
+/* assignment. You need to write your own code from scratch to help you learn. */
+
+html {
+  font-family: sans-serif;
+  background-color: #556688;
+}
+
+h1,
+a {
+  color: navy;
+}
+
+h2 {
+  color: #4682B4;
+}
+
+header {
+  color: white;
+  background-color: #556688;
+  padding: 1px 0 30px 0;
+}
+
+header a {
+  font-weight: bold;
+  color: white;
+}
+
+header #title {
+  color: white;
+  padding: 10px;
+}
+
+#menu {
+  display: inline;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu li {
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+}
+
+footer {
+  padding: 10px 10px;
+  background-color: #556688;
+  color: white;
+}
+
+footer a {
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 20px;
+}
+
+figure img {
+  width: 200px;
+}
+
+main {
+  padding: 10px;
+}
+
+blockquote {
+  margin-left: 0;
+  border-left: solid #878787 4px;
+  padding-left: 0.5em;
+}
+
+cite {
+  display: block;
+  font-size: 70%;
+}
+
+.error {
+  display: inline-block;
+  background-color: white;
+  border: 1px #b92467 solid;
+  color: #b92467;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.active_page {
+  font-weight: bold;
+  border-color: white;
+  border-style: solid;
+  padding: 2px 2px 2px 2px;
+  text-decoration: none;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples.                                        */
+/*                                                                             */
+/* Do not copy this code into your project submission and then change it.      */
+
+.feedback {
+  color: #dc341e;
+  font-weight: bold;
+  margin-top: 0.5em !important;
+  margin-bottom: -0.25em !important;
+}
+
+main.courses div.course-tile {
+  display: flex;
+  flex-direction: row;
+}
+
+main.courses figure {
+  padding: 5px;
+  margin: 20px;
+  margin-left: 0;
+  border: 1px solid #eeeeee;
+}
+
+main.courses figcaption {
+  font-size: 90%;
+  text-align: left;
+}
+
+main.courses form {
+  display: inline-block;
+}
+
+main.courses form div {
+  margin: 6px 0;
+}
+
+main.courses .form-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+main.courses #request-email {
+  min-width: 180px;
+  max-width: 240px;
+  margin-left: 4px;
+  flex-grow: 1;
+}
+
+main.courses #request-submit {
+  margin: 8px 0;
+}
+
+main.flowers form {
+  display: inline-block;
+}
+
+main.flowers form * {
+  margin-bottom: 4px;
+}
+
+main.flowers .label-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+main.flowers .label-input> :first-child {
+  width: 140px;
+  text-align: right;
+  margin-right: 6px;
+}
+
+main.flowers .form-group {
+  align-items: flex-start;
+}
+
+main.flowers .form-group> :first-child {
+  width: 140px;
+  text-align: right;
+  margin-right: 6px;
+}
+
+main.flowers input[type=radio] {
+  margin-left: 0;
+}
+
+main.reviews ul {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0;
+}
+
+main.reviews .tile {
+  list-style: none;
+}
