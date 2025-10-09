@@ -3,6 +3,11 @@ $page_title = "Yoko's Kitchen";
 
 $nav_cooking_class = "active_page";
 
+const BOOLEAN_CODINGS = array(
+  False => 0,
+  True => 1
+);
+
 // form data
 $form_values = array(
   "course-vegetarian" => NULL,
@@ -64,6 +69,24 @@ if (isset($_POST["request"])) {
   // If the form is valid, show confirmation message
   if ($form_valid) {
     // form is valid, show confirmation message
+
+    //load database
+    require_once "includes/db.php";
+
+    //open database
+    $db = open_sqlite_db("secure/site.sqlite");
+
+    $result = exec_sql_query(
+    $db,
+    "INSERT INTO course_requests (email, course-vegetarian, course-sauces) VALUES (:email, :veg, :sauces);",
+    array(
+      ":email" => $form_values["email"],
+      ":veg" => BOOLEAN_CODINGS[$form_values["course-vegetarian"]],
+      ":sauces" => BOOLEAN_CODINGS[$form_values["course-sauces"]]
+     )
+     );
+
+
     $show_confirmation_message = True;
   } else {
     // form was not valid, set sticky values
