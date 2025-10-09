@@ -78,7 +78,6 @@ const ROUTES = array(
   "/"                             => "pages/home.php",
   "/citation-policy"              => "pages/citations.php",
   "/cooking-classes"              => "pages/cooking-classes.php",
-  "/cooking-classes/confirmation" => "pages/cooking-confirmation.php",
   "/flowershop"                   => "pages/flowershop.php",
   "/flowershop/confirmation"      => "pages/flowershop-confirmation.php",
   "/transcript"                   => "pages/transcript.php",

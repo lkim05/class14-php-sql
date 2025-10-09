@@ -27,14 +27,14 @@ $show_feedback = array(
 $show_confirmation_message = False;
 
 // Did the user submit the form? (submit button parameter exists)
-if (isset($_POST['request'])) {
+if (isset($_POST["request"])) {
 
   // Assume the form is valid
   $form_valid = True;
 
   // Get HTTP request user data
-  $form_values["course-vegetarian"] = isset($_POST['japanese-vegetarian']);
-  $form_values["course-sauces"] = isset($_POST['sauces-masterclass']);
+  $form_values["course-vegetarian"] = isset($_POST["japanese-vegetarian"]);
+  $form_values["course-sauces"] = isset($_POST["sauces-masterclass"]);
   $form_values["email"] = trim($_POST["email"] ?? "");
 
   // Was at least one course check box, checked?
