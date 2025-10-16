@@ -78,7 +78,7 @@ if (isset($_POST["request"])) {
 
     $result = exec_sql_query(
     $db,
-    "INSERT INTO course_requests (email, course-vegetarian, course-sauces) VALUES (:email, :veg, :sauces);",
+    "INSERT INTO course_requests(email, course-vegetarian, course-sauces) VALUES (:email, :veg, :sauces);",
     array(
       ":email" => $form_values["email"],
       ":veg" => BOOLEAN_CODINGS[$form_values["course-vegetarian"]],
